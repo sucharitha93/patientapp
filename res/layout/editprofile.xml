@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+  <EditText
+        android:id="@+id/uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/uid"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ID"
+        android:hint="@string/username"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user"
+        android:hint="@string/password"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/bloodgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pass"
+        android:hint="@string/bloodgroup"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bloodgroup"
+        android:hint="@string/address"
+        android:inputType="textMultiLine"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:inputType="number"
+        android:layout_below="@+id/address"
+        android:hint="@string/age"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/age"
+        android:hint="@string/gender"
+        android:paddingBottom="10dp" />
+    
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gender"
+        android:hint="@string/phone"
+        android:paddingBottom="10dp" />
+
+    <Button 
+        android:id="@+id/update"
+        android:onClick="update"
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:text="@string/update"
+        />
+    
+
+</LinearLayout>
